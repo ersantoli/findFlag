@@ -5,12 +5,19 @@ function inicializa() {
    function abreURL() {
        var pais = document.getElementById("pais");
 
-       switch (pais.value) {
+  switch (pais.value) {
 case 'alemanha':
 case 'Alemanha':    
  pais.value = "german";
  console.log("alemanha");
  break;
+                
+case 'França':
+case 'frança':    
+ pais.value = "France";
+ console.log("frança");
+ break;
+
 
  case'japão':
   case'japao':
@@ -20,11 +27,7 @@ case 'Alemanha':
  console.log("japan");
  break;
 
- case 'holanda':
- case "Holanda":    
- pais.value = "Netherlands";
- console.log("alemanha");
- break;
+
 
  case 'romenia':
  pais.value = "romania";
@@ -46,7 +49,7 @@ case 'Alemanha':
  
 
 default:
- console.log(`Sorry, we are out of .`);
+ alert(`Desculpe!pais não encontrado,por favor reporte este erro .`);
 }
 
 
