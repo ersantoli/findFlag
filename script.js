@@ -113,7 +113,7 @@ default:
 
 
 
-       var url = 'https://restcountries.com/v3/name/'+ pais.value;
+       var url = 'https://restcountries.com/v3/translation/'+ pais.value;
 
        XHR.open("GET", url);
 
