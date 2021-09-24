@@ -42,7 +42,7 @@ case 'Alemanha':
  case 'iraque':
  case'Iraque':
  pais.value="iraq";
- break 
+ break; 
  
 
 default:
