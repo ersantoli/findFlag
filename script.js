@@ -83,13 +83,20 @@ default:
                   
                   
 
-                   bands.src = obj[0].flags[0];
-                   
+              /* codigo bd v2 
+                    bands.src = obj[0].flags[0];                   
                    nomePais.innerHTML ="Nome: "+ obj[0].name; //obj[0].altSpellings[3];
                    capital.innerHTML ="Capital: "+ obj[0].capital;
                    idioma.innerHTML ="Idioma: "+ obj[0].languages[0].nativeName;
                    traducao.innerHTML ="Tradução: "+ obj[0].translations.br;
-                   regiao.innerHTML ="Região: "+ obj[0].subregion;
+                   regiao.innerHTML ="Região: "+ obj[0].subregion;*/
+                      /*Codigo bd v3*/
+                       bands.src = obj[0].flags[0];
+                        nomePais.innerHTML ="Nome: "+ obj[0].name.common;
+                        capital.innerHTML ="Capital: "+ obj[0].capital;
+                        idioma.innerHTML ="Idioma: "+JSON.stringify(obj[0].languages);
+                        traducao.innerHTML ="tradução: "+ obj[0].translations.por.common;
+                      regiao.innerHTML = "Região: " + obj[0].subregion;
                    
                    
                    
