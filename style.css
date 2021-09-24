@@ -1,0 +1,105 @@
+ body{
+            display: grid;
+            margin: 0px;
+            padding: 0px;
+            background: linear-gradient(45deg,aqua,blue,darkblue,black);
+            /*background-repeat:no-repeat;*/
+            background-size:100% 900px;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-areas: "cabecalho cabecalho cabecalho"
+            ". pesquisa . "
+            ".card ."
+            
+            ;
+        }
+        #myTable{
+            display: grid;
+            grid-area: card;
+            text-align: center;
+            border-radius: 0 110px 0 100px;
+            background:linear-gradient(45deg,black,darkgrey);
+            box-shadow: 5px 5px 5px rgb(14, 165, 235);
+            width: 35vw;
+            display: none;
+            
+        }
+
+           
+        
+        #cabecalho{
+            display: grid;
+            grid-area: cabecalho;
+            height: 100px;
+            background-image: url("goodChoice.png");
+            background-repeat: no-repeat;
+            background-size: 100% 130%;
+            background-color:lightblue;            
+            text-align: center;
+            border: 5px inset rgb(2, 236, 33);
+        }
+        #cabecalho h1{
+    color: rgb(249, 253, 249);
+    text-shadow: 5px 5px 5px black;
+
+}        #pesquisa{
+            display: grid;
+            grid-area: pesquisa;
+            width: 60vw;
+            margin-top: 2vw;
+            font-size: 2rem;           
+            background:rgba(0,0,0,0.5); 
+            border-radius: 10px;
+            border: aqua solid;
+            text-align: center;
+            align-items: center;
+            
+        }
+        input{
+            width: 40vw;
+            font-size: 0.8em;
+            height: auto;
+            margin: 0 auto;
+        }
+        #botao{
+            font-size: 1.5rem;
+        }
+
+       
+      
+        @media (max-width: 600px){
+            body{
+                
+                background-size: 100% 900px;
+                background-repeat: no-repeat;
+            }
+            #cabecalho{
+                width: 100%;
+
+            }
+            #pesquisa{
+                margin:0 auto;
+            width: 75vw;           
+            font-size: 2rem;           
+            background:rgba(0,0,0,0.5);            
+        }
+        #myTable{
+           width: 75vw;
+            text-align: center;
+            border-radius: 0 50px 0 100px;
+            background:linear-gradient(45deg,black,darkgrey);
+            box-shadow: 5px 5px 5px rgb(14, 165, 235);
+            margin: 0 auto;
+            
+            
+        }
+        input{
+            width: 70vw;
+            font-size: 0.8em;
+        }
+        #botao{
+            font-size: 1.5rem;
+            width: 70vw;
+            margin: 0 auto;
+        }
+
+        }
