@@ -83,7 +83,7 @@ default:
                   
                   
 
-                   bands.src = obj[0].flag;
+                   bands.src = obj[0].flags[0];
                    
                    nomePais.innerHTML ="Nome: "+ obj[0].name; //obj[0].altSpellings[3];
                    capital.innerHTML ="Capital: "+ obj[0].capital;
@@ -106,7 +106,7 @@ default:
 
 
 
-       var url = 'https://restcountries.eu/rest/v2/name/'+ pais.value;
+       var url = 'https://restcountries.com/v3/name/'+ pais.value;
 
        XHR.open("GET", url);
 
