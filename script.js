@@ -48,8 +48,8 @@ case 'frança':
  break; 
  
 
-default:
- alert(`Desculpe!pais não encontrado,por favor reporte este erro .`);
+/*default:
+ alert(`Desculpe!pais não encontrado,por favor reporte este erro .`);*/
 }
 
 
