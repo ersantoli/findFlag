@@ -14,7 +14,7 @@ case 'Alemanha':
                 
 case 'França':
 case 'frança':    
- pais.value = "France";
+ pais.value = "République française";
  console.log("frança");
  break;
 
@@ -83,6 +83,15 @@ case 'frança':
                    console.log(obj);
                    document.getElementById("myTable").style.display = "block";
                   
+                 //Se o Pais nao tiver na base de dados retorna a mensagem de erro abaixo 
+                      
+                 if (obj.status == 404) {   
+               alert("Este Pais: " + pais.value + " Nâo foi encontrado, Digite um pais valido! ");
+               //base de dados nao reconhece escocia, e outros como paises, esta tudo  dentro de reino unido 
+                         document.getElementById("myTable").style.display = "none"
+
+           }
+                  
                   
                   
 
@@ -92,7 +101,9 @@ case 'frança':
                    capital.innerHTML ="Capital: "+ obj[0].capital;
                    idioma.innerHTML ="Idioma: "+ obj[0].languages[0].nativeName;
                    traducao.innerHTML ="Tradução: "+ obj[0].translations.br;
-                   regiao.innerHTML ="Região: "+ obj[0].subregion;*/
+                   regiao.innerHTML ="Região: "+ obj[0].subregion;
+                   */
+                      
                       /*Codigo bd v3*/
                        bands.src = obj[0].flags[0];
                         nomePais.innerHTML ="Nome: "+ obj[0].name.common;
@@ -105,10 +116,7 @@ case 'frança':
                    
                    document.getElementById('pais').value = ""; //limpado os campo apos receber os dados
                }
-               if (XHR.status == 404) {   //Se o Pais nao tiver na base de dados retorna a mensagem de erro abaixo    
-               alert("Este Pais: " + pais.value + " Nâo foi encontrado,digite um pais valido! ");
-               //base de dados nao reconhece escocia,irlanda e outros como paises, esta tudo  dentro de reino unido 
-           }
+             
           
 
            } 
